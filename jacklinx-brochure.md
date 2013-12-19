@@ -1,5 +1,9 @@
 # JackLinx Brochure #
 
+# What is jackLinx?
+
+JackLinx is a Structured Session Manager for the Music Classroom.
+
 # Concept
 
 JackLinx is a mash-up application: no new code, no new applications, no new functions.
