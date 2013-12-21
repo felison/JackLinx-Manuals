@@ -1,9 +1,11 @@
-JackLinx-Manuals
-==============
+# JackLinx Manuals
 
-Please click any manual source file in de repo above to open and read.
+### [JackLinx Student Manual](https://github.com/felison/JackLinx-Manuals/blob/master/jacklinx-student-manual.md)
 
-- JackLinx Student Manual
-- JackLinx Teacher Manual
-- JackLinx Administrator Manual
-- JackLinx Developer Manual
+### [JackLinx Teacher Manual](https://github.com/felison/JackLinx-Manuals/blob/master/jacklinx-teacher-manual.md)
+
+### [JackLinx Administrator Manual](https://github.com/felison/JackLinx-Manuals/blob/master/jacklinx-admin-manual.md) 
+- Download Instructions
+- Installation instructions.
+
+### [JackLinx Developer Manual](https://github.com/felison/JackLinx-Manuals/blob/master/jacklinx-developer-manual.md)
