@@ -9,6 +9,7 @@ Here you will find manuals for the JackLinx and JackPakx packages.
 ### [JackLinx Teacher Manual](https://github.com/felison/JackLinx-Manuals/blob/master/jacklinx-teacher-manual.md)
 - For the music teacher using JackLinx in his music classroom.
 - Music educational background.
+- Music workflows.
 - How to embed JackLinx in the music curriculum.
 
 ### [JackLinx Administrator Manual](https://github.com/felison/JackLinx-Manuals/blob/master/jacklinx-admin-manual.md) 
