@@ -2,9 +2,9 @@
 
 These design specifications embody a general concept of an envisioned  music educational software. As such it is guiding different practical implementations on different platforms:
 
-- JackLinx and JackPakx for the Debian-Ubuntu platform.
-- JackLinx Web Content for the internet platform.
-- Dolce for the OLPC-Sugar platform.
+- [JackLinx and JackPakx](http://www.jacklinx.nl) for the Debian-Ubuntu platform.
+- [JackLinx Web Content](http://content.jacklinx.nl/en/) for the internet platform.
+- [Dolce] (https://git.sugarlabs.org/dolce) for the OLPC-Sugar platform.
 
 JackLinx and JackPakx have been developed most extensively and can stand as a functional mock-up demo of the concept. Dolce for Sugar is still a conceptual project but can take inspiration and example from the JackLinx mock-up.
 
