@@ -1,4 +1,4 @@
-# Junior Music Lab Design Specifications
+# Design Specifications for a Junior Music Lab #
 
 These design specifications embody a general concept of an envisioned  music educational software. As such it is guiding different practical implementations on different platforms:
 
