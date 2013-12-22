@@ -4,7 +4,7 @@ Welcome to
 Here you will find manuals for the JackLinx and JackPakx packages.
 
 
-###[Junior Music Lab Design Specifications](https://github.com/felison/JackLinx-Manuals/blob/master/design-specifications-junior-music-lab.md)
+###[Design Specifications for a Junior Music Lab](https://github.com/felison/JackLinx-Manuals/blob/master/design-specifications-junior-music-lab.md)
 
 Music Educational principles and requirements guiding the design of JackLinx and JackPakx.
 
