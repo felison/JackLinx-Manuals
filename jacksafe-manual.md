@@ -19,7 +19,12 @@ Install openbox as root:
 apt-get install openbox
 ```
 
-This will also make sure that the graphical login window is showed at system startup.
+This process will install:
+- xorg
+- graphical login manager
+- openbox
+
+After reboot you will be presented with a graphical login screen that only shows OpenBox as option. 
 
 @ Install JackLinx dependencies
 
