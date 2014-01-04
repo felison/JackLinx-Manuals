@@ -11,26 +11,41 @@ Minimal Debian
 - root
 - jackuser
 
-# Enforcing OpenBox as the only available desktop manager
-- Only OpenBox
-As root:
+# Install OpenBox as desktop manager
+
+Install openbox as root:
 
 ```
 apt-get install openbox
 ```
+This will also make sure that the graphical login window is showed at system startup.
 
-@ Install all JackLinx dependencies
+@ Install JackLinx dependencies
+
 Use the script provided
 
+# Make sure OpenBox is given as only option for desktop manager.
 
-# Enforcing OpenBox as the only available  desktop manager
-Please note: Installation of these high level apps that require Gnome and/or KDE libraries goes with the automatic installation of a lot of gnome and kde related libraries. With that authomatically Gnome is installed as an optional desktop manager.
+Installation of some high level jackLinx apps requires Gnome and/or KDE libraries. With that authomatically Gnome is installed as an optional desktop manager. We want to remove all other desktop managers from the option list:
 
-After this we may delete all desktop managers other than OpenBox from the config file:
+Use an editor to open:
 
 ```
 /usr/share/xsessions
 ```
+Delete all desktopmanagers but OpenBox
+
+# Restrict the number of menu items
+
+As root open for editing:
+
+```
+/etc/xdg/openbox/menu.xml
+```
+
+or replace this file with the provided JackSafe master.
+
+
 
 
 
