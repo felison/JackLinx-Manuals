@@ -20,9 +20,9 @@ apt-get install openbox
 ```
 
 This process will install:
-- xorg
-- graphical login manager
-- openbox
+- xorg - x-server
+- lightdm - graphical login manager
+- openbox -desktop manager
 
 After reboot you will be presented with a graphical login screen that only shows OpenBox as option. 
 
@@ -42,7 +42,7 @@ As root: Use an editor to open:
 /usr/share/xsessions
 ```
 
-Delete all desktopmanagers except OpenBox
+Delete all entries except OpenBox.
 
 # Restrict the number of menu items in OpenBox menu
 By default OpenBox shows all available Debian applications in its menu. We can restrict the options by deleting menuitems from the configuration file:
@@ -55,25 +55,8 @@ As root open for editing:
 Delete all unwanted menu-items or replace the configuration file *menu.xml* with the provided JackSafe master.
 You might choose to save the original file *menu.xml* as *menu-backup.xml*.
 
+# Install a root cronjob to frequently reset the jackuser homedir to defaults:
 
-
-
-
-
-
-
-
-
-
-
-
-#Assumptions
-
-There is a standard guest user account called *jackuser*.
-
-A root cronjob:
-- frequently (once every minute) deletes all files in the *jackuser* home directory 
-- restores default configuration files in the *jackuser* user directory.
 
 
  
