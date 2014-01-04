@@ -26,13 +26,15 @@ This process will install:
 
 After reboot you will be presented with a graphical login screen that only shows OpenBox as option. 
 
-@ Install JackLinx dependencies
+# Install JackLinx dependencies
 
-Use the script provided
+As root: Use the script provided.
+This script not only installs the JackLinx applications but also all related dependencies. These include all Gnome libraries. As a result the Gnome desktop becomes one of the desktop options in the login screen.
+As we do not wsnt the user to be able to choose Gnome we have to delete Gnome from the desktop options list:
 
 # Make sure OpenBox is the only option for desktop manager.
 
-Installation of some high level jackLinx apps requires Gnome and/or KDE libraries. With that Gnome is installed as an optional desktop manager. We want to Gnome and all other desktop managers from the option list.
+To make sure that OpenBox will be the only desktop option we have to remove all other desktops from the desktop optioen list:
 
 As root: Use an editor to open:
 
@@ -40,20 +42,18 @@ As root: Use an editor to open:
 /usr/share/xsessions
 ```
 
-Delete all desktopmanagers but OpenBox
+Delete all desktopmanagers except OpenBox
 
 # Restrict the number of menu items in OpenBox menu
+By default OpenBox shows all available Debian applications in its menu. We can restrict the options by deleting menuitems from the configuration file:
 
 As root open for editing:
 
 ```
 /etc/xdg/openbox/menu.xml
 ```
-
-- Delete all entries but OpenBox
-- Edit default desktopmanager: default=Openbox
- 
-or replace this file with the provided JackSafe master.
+Delete all unwanted menu-items or replace the configuration file *menu.xml* with the provided JackSafe master.
+You might choose to save the original file *menu.xml* as *menu-backup.xml*.
 
 
 
