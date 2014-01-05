@@ -32,7 +32,7 @@ As root: Use the script provided.
 This script not only installs the JackLinx applications but also all related dependencies. These include all Gnome libraries. As a result the Gnome desktop becomes one of the desktop options in the login screen.
 As we do not wsnt the user to be able to choose Gnome we have to delete Gnome from the desktop options list:
 
-# Make sure OpenBox is the only option for desktop manager.
+# Restrict desktop managers to OpenBox.
 
 To make sure that OpenBox will be the only desktop option we have to remove all other desktops from the desktop optioen list:
 
@@ -44,7 +44,7 @@ As root: Use an editor to open:
 
 Delete all entries except OpenBox.
 
-# Restrict the number of menu items in OpenBox menu
+# Restrict menu items in OpenBox menu
 By default OpenBox shows all available Debian applications in its menu. We can restrict the options by deleting menuitems from the configuration file:
 
 As root open for editing:
