@@ -55,7 +55,9 @@ As root open for editing:
 Delete all unwanted menu-items or replace the configuration file *menu.xml* with the provided JackSafe master.
 You might choose to save the original file *menu.xml* as *menu-backup.xml*.
 
-# Install a root cronjob to frequently reset the jackuser homedir to defaults:
+# Install cronjob to reset default homedirectory.
+
+Use rsync to remove added stuff and rstore changed stuff.
 
 
 
