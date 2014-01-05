@@ -4,8 +4,9 @@ JackSafe is a student security add-on for Jacklinx.
 
 Choices to make a relatively secure installation:
 
-# Install Minimal Debian as operating system
-Minimal Debian no extra software installed.
+# Install minimal operating system
+Minimal Debian or Ubuntu server.
+No extra software installed.
 
 # Create users
 - root
