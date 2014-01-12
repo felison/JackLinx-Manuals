@@ -1,18 +1,25 @@
 # JackSafe - Manual
 
-JackSafe is a student security add-on for Jacklinx.
+JackSafe is a student safety add-on for Jacklinx.
 
-Choices to make a relatively secure installation:
+You can make a child safe embedded kiosk mode installation with:
+- a minimal operating system: Debian Mini
+- a guest user with restricted privileges
+- a minimal window  manager: Openbox
+- no desktop
+- a minimal set of applications: limited to the applications needed by JackLinx
+- a minimal user menu: limited to the menu items needed for JackLinx
+- automatic reset of user configurations: user intervention is frequently erased.
 
 # Install minimal operating system
 Minimal Debian or Ubuntu server.
 No extra software installed.
 
-# Create users
+# Create restricted users
 - root
 - jackuser
 
-# Install OpenBox as desktop manager
+# Install OpenBox as window manager
 
 Install openbox as root:
 
@@ -27,7 +34,7 @@ This process will install:
 
 After reboot you will be presented with a graphical login screen that only shows OpenBox as option. 
 
-# Install JackLinx dependencies
+# Minimal set of applications: Install JackLinx dependencies
 
 As root: Use the script provided.
 This script not only installs the JackLinx applications but also all related dependencies. These include all Gnome libraries. As a result the Gnome desktop becomes one of the desktop options in the login screen.
@@ -35,7 +42,7 @@ As we do not wsnt the user to be able to choose Gnome we have to delete Gnome fr
 
 # Restrict desktop managers to OpenBox.
 
-To make sure that OpenBox will be the only desktop option we have to remove all other desktops from the desktop optioen list:
+To make sure that OpenBox will be the only desktop option we have to remove all other desktops - if installed at all - from the desktop option list:
 
 As root: Use an editor to open:
 
@@ -44,6 +51,9 @@ As root: Use an editor to open:
 ```
 
 Delete all entries except OpenBox.
+
+please note: The installation of the graphical applications needed by JackLinx will install a large set of libraries from the KDE and Gnome desktop. These lilbraries are needed for the proper functioning of the graphical interfaces of there applications. It dos not mean however that the KDE or Gnome desktops as such are being installed.
+
 
 # Restrict menu items in OpenBox menu
 By default OpenBox shows all available Debian applications in its menu. We can restrict the options by deleting menuitems from the configuration file:
@@ -56,9 +66,14 @@ As root open for editing:
 Delete all unwanted menu-items or replace the configuration file *menu.xml* with the provided JackSafe master.
 You might choose to save the original file *menu.xml* as *menu-backup.xml*.
 
-# Install cronjob to reset default homedirectory.
+# Automatic reset of user directory
 
-Use rsync to remove added stuff and rstore changed stuff.
+Install cronjob to reset default homedirectory.
+
+Use rsync to remove added stuff and restore changed stuff.
+
+Source dir = /opt/jacklinx/usr/master
+Destination directory = ./home/jackuser
 
 
 
