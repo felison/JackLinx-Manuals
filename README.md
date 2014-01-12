@@ -30,3 +30,9 @@ Music educational principles and requirements guiding the design of a.o. JackLin
 - Configurations.
 - Scripts.
 - Perspectives for development.
+
+### JackSafe Manual
+- For the administrator and teacher wanting to make a child safe installation.
+- Outlining options for making a safe kiosk mode JackLinx workstation.
+- Describing software add-on to automatically reset user settings.
+
