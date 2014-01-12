@@ -1,8 +1,10 @@
 # JackSafe - Manual
 
-JackSafe is a student safety add-on for Jacklinx.
+The JackSafe Package is a student safety add-on for Jacklinx. It can be used as an active component in a dumbed down restricted JackLinx workstation.
 
-You can make a child safe embedded kiosk mode installation with:
+The primary concern with child safety is to restrict access to options to do indecent things or to be exposed to indecency.
+
+To do this you can make a child safe embedded kiosk mode installation with:
 - a minimal operating system: Debian Mini
 - a guest user with restricted privileges
 - a minimal window  manager: Openbox
