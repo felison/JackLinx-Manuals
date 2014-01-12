@@ -8,8 +8,9 @@ You can make a child safe embedded kiosk mode installation with:
 - a minimal window  manager: Openbox
 - no desktop
 - a minimal set of applications: limited to the applications needed by JackLinx
-- a minimal user menu: limited to the menu items needed for JackLinx
-- automatic reset of user configurations: user intervention is frequently erased.
+- a minimal set of libraries: limited to those needed by the Jacklinx applications.
+- a minimal user menu: limited to the menu items needed for using JackLinx
+- automatic reset of user configurations: user intervention is frequently erased by a root cronjob.
 
 # Install minimal operating system
 Minimal Debian or Ubuntu server.
