@@ -17,7 +17,7 @@ To do this you can make a child safe embedded kiosk mode installation with:
 
 
 # Safety effect of this configuration
-The net effect of these measures will be an installation comparable to a public internet kiosk like Webconverger or a standalone media player installation like XBMC. These type of installations are characterized by a extremely limited set of buttons, menu elements or control elements for user intervention. Often configurations are automatically reset to default at logon or shutdown. In effect these dumbed down installations make a desktop computer into a specialized tool with embedded software. Embedded means: The user controls the software by physical buttons, a limited touchscreen or a webinterface. When limited to essential menu-buttons a dumbed down desktop works in the same way.
+The net effect of these measures will be an installation comparable to a public internet kiosk like Webconverger or a standalone media player installation like XBMC. These type of installations are characterized by a extremely limited set of buttons, menu elements or control elements for user intervention. Often configurations are automatically reset to default at logon or shutdown. In effect these dumbed down installations make a desktop computer into a specialized tool with embedded software. Embedded means: The user controls the software by physical buttons, a limited touchscreen or a webinterface. When limited to essential menu-buttons a dumbed down desktop works as an embedded system.
 
 Of course - contrary to a real embedded system - any user can reach the command line interface by hitting ALT-CTRL-F1. But even then the hacker would need a admin/root password to do anything indecent. 
 
