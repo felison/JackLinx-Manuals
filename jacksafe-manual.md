@@ -37,9 +37,9 @@ apt-get install openbox
 This process will install:
 - xorg - x-server
 - lightdm - graphical login manager
-- openbox -desktop manager
+- openbox - window manager
 
-After reboot you will be presented with a graphical login screen that only shows OpenBox as option. 
+After reboot you will be presented with the LightDM graphical login screen that only shows Openbox as an option. 
 
 # Minimal set of applications: Install JackLinx dependencies
 
@@ -47,9 +47,9 @@ As root: Use the script provided.
 This script not only installs the JackLinx applications but also all related dependencies. These include all Gnome libraries. As a result the Gnome desktop becomes one of the desktop options in the login screen.
 As we do not wsnt the user to be able to choose Gnome we have to delete Gnome from the desktop options list:
 
-# Restrict desktop managers to OpenBox.
+# Configure restriction of window/desktop managers to OpenBox.
 
-To make sure that OpenBox will be the only desktop option we have to remove all other desktops - if installed at all - from the desktop option list:
+To make sure that OpenBox will be the only desktop option systemwide we have to remove all other desktops - if installed at all - from the desktop option list:
 
 As root: Use an editor to open:
 
@@ -57,15 +57,15 @@ As root: Use an editor to open:
 /usr/share/xsessions
 ```
 
-Delete all entries except OpenBox.
+Delete all entries in the file xsessions except OpenBox.
 
-please note: The installation of the graphical applications needed by JackLinx will install a large set of libraries from the KDE and Gnome desktop. These lilbraries are needed for the proper functioning of the graphical interfaces of there applications. It dos not mean however that the KDE or Gnome desktops as such are being installed.
+Please note: The installation of the graphical applications needed by JackLinx will attract and install a large set of libraries from the KDE and Gnome desktop repositories. These libraries are needed for the proper functioning of the graphical interfaces of these applications. It does not mean however that the KDE or Gnome desktops as such are being installed.
 
 
-# Restrict menu items in OpenBox menu
-By default OpenBox shows all available Debian applications in its menu. We can restrict the options by deleting menuitems from the configuration file:
+# Restrict menu items in OpenBox user menu.
+By default OpenBox shows all available Debian applications in its menu. We can systemwide restrict the options by deleting menuitems from the menu configuration file:
 
-As root open for editing:
+As root open for editing the file:
 
 ```
 /etc/xdg/openbox/menu.xml
@@ -73,7 +73,7 @@ As root open for editing:
 Delete all unwanted menu-items or replace the configuration file *menu.xml* with the provided JackSafe master.
 You might choose to save the original file *menu.xml* as *menu-backup.xml*.
 
-# Automatic reset of user directory
+# Automatic reset of user directory - *under development*
 
 Install cronjob to reset default homedirectory.
 
