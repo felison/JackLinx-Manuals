@@ -6,7 +6,8 @@ The primary concern with child safety is to restrict access to options to do ind
 
 To do this you can make a child safe embedded kiosk mode installation with:
 - a minimal operating system: Debian Mini
-- a guest user with restricted privileges
+- a student user account "jackuser" with restricted privileges
+- an admin user with privileges to set restrictions to the student user
 - a minimal window  manager: Openbox
 - no desktop
 - a minimal set of applications: limited to the applications needed by JackLinx
@@ -25,8 +26,8 @@ Minimal Debian or Ubuntu server.
 No extra software installed.
 
 # Create restricted users
-- root
-- jackuser
+- admin/root user with full permissions
+- jackuser student account with restrictions
 
 # Install OpenBox as window manager
 
